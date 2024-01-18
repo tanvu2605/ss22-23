@@ -1,8 +1,11 @@
-const n = Number(prompt("Nhập vào một số: "));
-
-const sqrt_n = Math.sqrt(n);
-if (Math.floor(sqrt_n) === sqrt_n) {
-  alert(n + " là số chính phương");
-} else {
-  alert(n + " không phải số chính phương");
-}
+function xoaPhanTuLe(arr) {
+    return arr.filter(function (element) {
+      return element % 2 === 0;
+    });
+  }
+  
+  let mangSoNguyen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  
+  let mangMoi = xoaPhanTuLe(mangSoNguyen);
+  console.log("Mảng số nguyên ban đầu:", mangSoNguyen);
+  console.log("Mảng mới sau khi xóa phần tử lẻ:", mangMoi);
